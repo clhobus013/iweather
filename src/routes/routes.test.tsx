@@ -1,9 +1,8 @@
-import { render } from "@__tests__/utils/customRender"
+import { render, act, screen, waitFor } from "@__tests__/utils/customRender"
 import { Routes } from "."
 import { saveStorageCity } from "@libs/asyncStorage/cityStorage";
 import { api } from "@services/api";
 import { mockWeatherAPIResponse } from "@__tests__/mocks/services/mockWeatherAPIResponse";
-import { act, screen, waitFor } from "@testing-library/react-native";
 
 describe("Routes", () => {
     it("should be render search screen when not city selected", async () => {

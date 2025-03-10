@@ -18,5 +18,5 @@ const customRender = (
     options?: Omit<RenderOptions, 'wrapper'>
 ) => render(ui, {wrapper: Providers, ...options});
 
-export * from '@testing-library/jest-native';
+export * from '@testing-library/react-native';
 export {customRender as render, Providers}
